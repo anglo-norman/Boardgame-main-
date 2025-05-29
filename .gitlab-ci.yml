@@ -68,8 +68,8 @@ build_and_tag_push_image:       # This job runs in the build stage, which runs f
   script:
     - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
     - mvn package
-    - docker build -t adijaiswal/boardgitlab:latest .
-    - docker push adijaiswal/boardgitlab:latest   
+    - docker build -t laconicsentry/boardgitlab:latest .
+    - docker push laconicsentry/boardgitlab:latest   
   tags:
     - self-hosted
   only:
